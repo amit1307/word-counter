@@ -1,7 +1,8 @@
 package com.amit.exception;
 
 public enum WebErrorType implements WordCountError {
-    BAD_FORMAT("WC_00001", "Bad Format: %s");
+    BAD_FORMAT("WC_00001", "Bad Format: %s"),
+    TRANSLATION_ERROR("WC_00002", "Translation failed");
 
     private final String errorCode;
     private final String message;

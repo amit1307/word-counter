@@ -16,7 +16,7 @@ class WordCounterExceptionHandlerTest {
     }
 
     @Test
-    public void shouldThrowBadRequestExceptionWhenInvalidStoredEventRequestExceptionOccurs() {
+    public void shouldThrowBadRequestExceptionWhenInvalidWordExceptionOccurs() {
         // when
         ResponseEntity<ErrorResponse> responseEntity = exceptionHandler.handleInvalidWordException(new InvalidWordException("Invalid word"));
 
@@ -27,4 +27,15 @@ class WordCounterExceptionHandlerTest {
         assertThat(responseEntity.getBody().getDescription()).isEqualTo("Bad Format: Invalid word");
     }
 
+    @Test
+    public void shouldThrowInternalServerErrorWhenTranslationExceptionOccurs() {
+        // when
+        ResponseEntity<ErrorResponse> responseEntity = exceptionHandler.handleTranslationException(new TranslationException("Translation failed"));
+
+        // then
+        assertThat(responseEntity.getStatusCodeValue()).isEqualTo(500);
+        assertThat(responseEntity.getBody()).isNotNull();
+        assertThat(responseEntity.getBody().getErrorCode()).isEqualTo("WC_00002");
+        assertThat(responseEntity.getBody().getDescription()).isEqualTo("Translation failed");
+    }
 }
