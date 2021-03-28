@@ -1,7 +1,7 @@
-package com.amit.test.resource;
+package com.amit.resource;
 
-import com.amit.test.exception.InvalidWordException;
-import com.amit.test.service.WordCounterService;
+import com.amit.service.WordCounterService;
+import com.amit.exception.InvalidWordException;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

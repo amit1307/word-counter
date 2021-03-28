@@ -1,4 +1,4 @@
-package com.amit.test.exception;
+package com.amit.exception;
 
 public enum WebErrorType implements WordCountError {
     BAD_FORMAT("WC_00001", "Bad Format: %s");

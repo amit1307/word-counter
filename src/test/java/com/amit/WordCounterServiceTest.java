@@ -1,7 +1,7 @@
-package com.amit.test;
+package com.amit;
 
-import com.amit.test.exception.InvalidWordException;
-import com.amit.test.service.WordCounterService;
+import com.amit.service.WordCounterService;
+import com.amit.exception.InvalidWordException;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;

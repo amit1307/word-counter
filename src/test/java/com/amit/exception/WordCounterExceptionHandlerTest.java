@@ -1,4 +1,4 @@
-package com.amit.test.exception;
+package com.amit.exception;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

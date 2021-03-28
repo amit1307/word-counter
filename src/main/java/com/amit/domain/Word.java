@@ -1,4 +1,4 @@
-package com.amit.test.domain;
+package com.amit.domain;
 
 import java.util.Objects;
 

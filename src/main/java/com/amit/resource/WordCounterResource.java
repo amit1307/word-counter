@@ -1,6 +1,6 @@
-package com.amit.test.resource;
+package com.amit.resource;
 
-import com.amit.test.service.WordCounterService;
+import com.amit.service.WordCounterService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

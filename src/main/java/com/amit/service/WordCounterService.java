@@ -1,8 +1,8 @@
-package com.amit.test.service;
+package com.amit.service;
 
-import com.amit.test.Translator;
-import com.amit.test.domain.Word;
-import com.amit.test.exception.InvalidWordException;
+import com.amit.Translator;
+import com.amit.domain.Word;
+import com.amit.exception.InvalidWordException;
 import org.springframework.stereotype.Component;
 
 import java.util.HashMap;

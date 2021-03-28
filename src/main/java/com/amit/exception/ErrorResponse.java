@@ -1,4 +1,4 @@
-package com.amit.test.exception;
+package com.amit.exception;
 
 public class ErrorResponse {
 

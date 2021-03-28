@@ -1,6 +1,6 @@
-package com.amit.test.exception;
+package com.amit.exception;
 
-public interface CommerceError {
+public interface WordCountError {
     String getErrorCode();
 
     String getMessage();
